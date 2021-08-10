@@ -5,7 +5,7 @@ app.use(express.json());
 const { resolve } = require("path");
 const stripe = require('stripe')('sk_test_51JCuQlLAJ7k6Ijx1cychaFD8lweczkdG0qWZSvQaLh3uMWFNC5ZT5nR1f9Hu7N3gZMgRqRYfU6JpxwyCXL0uJ3uW00pdgioRMk');
 
-//var PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 5000;
 
 app.use(express.static('client'));
 
@@ -102,4 +102,4 @@ function generateResponse(response, intent) {
   }
 }
 
-//app.listen(PORT, () => console.log(`Node server listening on port ` + PORT));
+app.listen(PORT, () => console.log(`Node server listening on port ` + PORT));
