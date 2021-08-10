@@ -9,6 +9,7 @@ const stripe = require('stripe')('sk_test_51JCuQlLAJ7k6Ijx1cychaFD8lweczkdG0qWZS
 
 app.use(express.static('client'));
 
+/*
 app.get("/", (req, res) => {
   // Display checkout page
   const path = resolve("./index.html");
@@ -39,7 +40,7 @@ app.get("/fail.html", (req, res) => {
   res.sendFile(path);
 });
 
-
+*/
 
 
 
