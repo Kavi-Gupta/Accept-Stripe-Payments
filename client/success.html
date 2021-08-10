@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="/client.js"></script>
+  </head>
+  <body>
+    <div>
+      <p id="message">
+        Your payment was a success!
+      </p>
+      <button onclick='redirectToPaymentPage()'>Make another payment</button>
+    </div>
+    <script>
+      function redirectToPaymentPage() {
+        location.replace("https://stripe-credit-card-integration.kavigupta1.repl.co/")
+      }
+    </script>
+  </body>
+</html>
